@@ -9,6 +9,8 @@ def captureImage(folderName):
     videoCapture=cv2.VideoCapture(0)
 
     # 이미지 크기 조절하기
+    #cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+    #cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     videoCapture.set(3,640)
     videoCapture.set(4,480)
     ret,frame=videoCapture.read()
